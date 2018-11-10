@@ -1,7 +1,7 @@
 // pages/feedback/feedback.js
 var app = getApp()
 var Bmob = require("../../dist/Bmob.js");
-Bmob.initialize('13108f5551c1077933f78b9b2dec112c', '31a080731df6c05615e616a058fa729d');
+Bmob.initialize('你的Application ID', '你的REST API KEY');
 var common = require('../../utils/getCode.js')
 var that;
 Page({
