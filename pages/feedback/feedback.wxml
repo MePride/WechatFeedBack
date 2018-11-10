@@ -1,0 +1,23 @@
+<loading hidden="{{loading}}">
+  页面初始化中...
+</loading>
+<form bindsubmit="sendNewMood" >
+    <view class="add_pic" bindtap="uploadPic" wx-if="{{!isSrc}}">
+        <view>添加图片（选）</view>
+    </view>
+    <view wx:if="{{isSrc}}" class="image_box">
+        <view  class="picPre">
+            <image src="{{src}}"  mode="aspectFill"></image>
+            <view bindtap="clearPic"></view>
+        </view>
+    </view>
+    
+    <input placeholder="姓名(必填)"  class="add_name" value="" bindinput="setName" name="name"/>
+    <input placeholder="联系电话(必填)"  class="add_phone" value="" bindinput="setPhone" name="phone"/>
+    <input placeholder="联系QQ(选填)"  class="add_qq" value="" bindinput="setQQ" name="qq"/>
+    <input placeholder="预约时间(选填)"  class="add_time" value="" bindinput="setTime" name="time"/>
+    <view  class="addConent">
+        <textarea  placeholder="问题描述(必填)" maxlength="1000"  value="" name="content" bindinput="setContent"/>
+    </view>
+    <button bindtap='feedBack' loading="{{isLoading}}" hover-start-time="200" disabled="{{isdisabled}}" formType="submit">提交</button>
+</form>

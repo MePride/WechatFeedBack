@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='gotoFeedback'>
+    <button bindtap="bindViewTap">申请维修单</button>
+  </view>
+</view>

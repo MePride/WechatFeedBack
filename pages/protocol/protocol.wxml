@@ -1,0 +1,9 @@
+<view class="title">本程序开发过程</view>
+
+<view>
+    <view class="txt1">
+    这里要讲起一个小故事。某日看到Z君手机上有个正在开发的小程序，内容大致是一个O2O电脑上门维修的小程序，于是简单看了下Z君写的小程序，和Z君讨论起这个小程序的实现思路和过程(此时Z君的小程序只有一个UI,且无服务器)，于是便有了这个小程序。
+    <view class="txt2">· 本程序使用Bmob后端云储存数据</view>
+    <view class="txt2">· 本程序源码已上传github</view>
+    </view> 
+</view>
