@@ -2,7 +2,7 @@
 App({
   onLaunch: function () {
     var Bmob = require('/dist/Bmob.js');
-    Bmob.initialize('13108f5551c1077933f78b9b2dec112c', '31a080731df6c05615e616a058fa729d');
+    Bmob.initialize('你的Application ID', '你的REST API KEY');
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
